@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8020D6081F1A742700F6671A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D6071F1A742700F6671A /* AppDelegate.swift */; };
-		8020D60A1F1A742700F6671A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D6091F1A742700F6671A /* ViewController.swift */; };
+		8020D60A1F1A742700F6671A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D6091F1A742700F6671A /* HomeViewController.swift */; };
 		8020D60D1F1A742700F6671A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D60B1F1A742700F6671A /* Main.storyboard */; };
 		8020D6101F1A742700F6671A /* AppPets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8020D60E1F1A742700F6671A /* AppPets.xcdatamodeld */; };
 		8020D6121F1A742700F6671A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8020D6111F1A742700F6671A /* Assets.xcassets */; };
 		8020D6151F1A742700F6671A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D6131F1A742700F6671A /* LaunchScreen.storyboard */; };
 		8020D6201F1A742700F6671A /* AppPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D61F1F1A742700F6671A /* AppPetsTests.swift */; };
 		8020D62B1F1A742700F6671A /* AppPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D62A1F1A742700F6671A /* AppPetsUITests.swift */; };
+		8020D6391F1ABB5400F6671A /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D6381F1ABB5400F6671A /* Pet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8020D6041F1A742700F6671A /* AppPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8020D6071F1A742700F6671A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8020D6091F1A742700F6671A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8020D6091F1A742700F6671A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8020D60C1F1A742700F6671A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8020D60F1F1A742700F6671A /* AppPets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppPets.xcdatamodel; sourceTree = "<group>"; };
 		8020D6111F1A742700F6671A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		8020D6261F1A742700F6671A /* AppPetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8020D62A1F1A742700F6671A /* AppPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPetsUITests.swift; sourceTree = "<group>"; };
 		8020D62C1F1A742700F6671A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8020D6381F1ABB5400F6671A /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				8020D6071F1A742700F6671A /* AppDelegate.swift */,
-				8020D6091F1A742700F6671A /* ViewController.swift */,
+				8020D6091F1A742700F6671A /* HomeViewController.swift */,
 				8020D60B1F1A742700F6671A /* Main.storyboard */,
 				8020D6111F1A742700F6671A /* Assets.xcassets */,
 				8020D6131F1A742700F6671A /* LaunchScreen.storyboard */,
 				8020D6161F1A742700F6671A /* Info.plist */,
 				8020D60E1F1A742700F6671A /* AppPets.xcdatamodeld */,
+				8020D6381F1ABB5400F6671A /* Pet.swift */,
 			);
 			path = AppPets;
 			sourceTree = "<group>";
@@ -263,7 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8020D6101F1A742700F6671A /* AppPets.xcdatamodeld in Sources */,
-				8020D60A1F1A742700F6671A /* ViewController.swift in Sources */,
+				8020D6391F1ABB5400F6671A /* Pet.swift in Sources */,
+				8020D60A1F1A742700F6671A /* HomeViewController.swift in Sources */,
 				8020D6081F1A742700F6671A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
