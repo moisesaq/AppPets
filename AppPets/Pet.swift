@@ -11,20 +11,27 @@ import Foundation
 struct Pet {
     let id: Int
     let name: String
-    
-    enum SerializationError: Error {
-        case missing(String)
-        case invalid(String, Any)
-    }
+    let category: Category
+    let photos: [String]
     
     init(json: [String: Any]) throws {
         guard let id = json["id"] as? Int else { throw SerializationError.missing("Pet ID is missing") }
         guard let name = json["name"] as? String else { throw SerializationError.missing("Pet name is misssing") }
         
+        guard let jsonCategory = json["category"] as? [String: Any] else {
+            throw SerializationError.missing("Category is missing")
+        }
+        
+        guard let photos = json["photoUrls"] as? [String] else { throw SerializationError.missing("Pet photos are missing")}
+        
+        
         self.id = id
         self.name = name
+        self.category = try Category(json: jsonCategory)
+        self.photos = photos
     }
     
+    //METHODS STATIC FOR HTTP REQUEST
     static let baseUrl = "http://petstore.swagger.io/v2/pet/findByStatus?status="
     
     static func testFunction(data: String, completion: @escaping (String) -> ()) {

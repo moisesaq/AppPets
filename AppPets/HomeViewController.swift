@@ -25,45 +25,20 @@ class HomeViewController: UIViewController {
         /*Pet.testFunction(data: "hello"){ (result: String) in
             print(result)
         }*/
-        
         Pet.findPetsByStatus(status: "sold"){ (results: [Pet]) in
-            self.resultLabel.text = results[1].name
+            var textResult = ""
             for result in results{
                 print("\(result)\n")
+                textResult += "\(result.name) | \(result.category.name) | \(String(describing: result.photos.first))\n"
+            }
+            DispatchQueue.main.async {
+                self.resultLabel.text = textResult
             }
         }
-    }
-    
-    func getPets(status: String?) {
-        guard let status = status else{
-            print("String is nil")
-            return
-        }
-        print(status)
         
-        let textUrl = baseUrl + status
-        guard let url = URL(string: textUrl)  else { return }
-        
-        /*var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")*/
-        let session = URLSession.shared
-        session.dataTask(with: url){(data, response, error) in
-            if let response = response{
-                print(response)
-            }
+        /*DispatchQueue.global(qos: .userInteractive).async {
             
-            if let data = data{
-                print(data)
-                do{
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
-                }catch{
-                    print(error)
-                }
-            }
-            
-        }.resume()
+        }*/
     }
     
 }

@@ -16,6 +16,9 @@
 		8020D6201F1A742700F6671A /* AppPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D61F1F1A742700F6671A /* AppPetsTests.swift */; };
 		8020D62B1F1A742700F6671A /* AppPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D62A1F1A742700F6671A /* AppPetsUITests.swift */; };
 		8020D6391F1ABB5400F6671A /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D6381F1ABB5400F6671A /* Pet.swift */; };
+		8020D63B1F1DB13700F6671A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63A1F1DB13700F6671A /* Category.swift */; };
+		8020D63D1F1DB95900F6671A /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63C1F1DB95900F6671A /* SerializationError.swift */; };
+		8020D63F1F1DCE0D00F6671A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		8020D62A1F1A742700F6671A /* AppPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPetsUITests.swift; sourceTree = "<group>"; };
 		8020D62C1F1A742700F6671A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8020D6381F1ABB5400F6671A /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		8020D63A1F1DB13700F6671A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8020D63C1F1DB95900F6671A /* SerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
+		8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				8020D6161F1A742700F6671A /* Info.plist */,
 				8020D60E1F1A742700F6671A /* AppPets.xcdatamodeld */,
 				8020D6381F1ABB5400F6671A /* Pet.swift */,
+				8020D63A1F1DB13700F6671A /* Category.swift */,
+				8020D63C1F1DB95900F6671A /* SerializationError.swift */,
+				8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */,
 			);
 			path = AppPets;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8020D6101F1A742700F6671A /* AppPets.xcdatamodeld in Sources */,
+				8020D63B1F1DB13700F6671A /* Category.swift in Sources */,
 				8020D6391F1ABB5400F6671A /* Pet.swift in Sources */,
+				8020D63D1F1DB95900F6671A /* SerializationError.swift in Sources */,
 				8020D60A1F1A742700F6671A /* HomeViewController.swift in Sources */,
+				8020D63F1F1DCE0D00F6671A /* TableViewCell.swift in Sources */,
 				8020D6081F1A742700F6671A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
