@@ -19,6 +19,9 @@
 		8020D63B1F1DB13700F6671A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63A1F1DB13700F6671A /* Category.swift */; };
 		8020D63D1F1DB95900F6671A /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63C1F1DB95900F6671A /* SerializationError.swift */; };
 		8020D63F1F1DCE0D00F6671A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */; };
+		80B819381F1F0AC300E45BDE /* img_husky_siberiano_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80B819371F1F0AC300E45BDE /* img_husky_siberiano_3.jpg */; };
+		80B8193A1F1F134900E45BDE /* filter100.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B819391F1F134900E45BDE /* filter100.png */; };
+		80B8193C1F1F1D6500E45BDE /* AlertPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8193B1F1F1D6500E45BDE /* AlertPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		8020D63A1F1DB13700F6671A /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8020D63C1F1DB95900F6671A /* SerializationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
 		8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		80B819371F1F0AC300E45BDE /* img_husky_siberiano_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_husky_siberiano_3.jpg; sourceTree = "<group>"; };
+		80B819391F1F134900E45BDE /* filter100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter100.png; sourceTree = "<group>"; };
+		80B8193B1F1F1D6500E45BDE /* AlertPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		8020D6061F1A742700F6671A /* AppPets */ = {
 			isa = PBXGroup;
 			children = (
+				80B819361F1F0AB200E45BDE /* images */,
 				8020D6071F1A742700F6671A /* AppDelegate.swift */,
 				8020D6091F1A742700F6671A /* HomeViewController.swift */,
 				8020D60B1F1A742700F6671A /* Main.storyboard */,
@@ -118,6 +125,7 @@
 				8020D63A1F1DB13700F6671A /* Category.swift */,
 				8020D63C1F1DB95900F6671A /* SerializationError.swift */,
 				8020D63E1F1DCE0D00F6671A /* TableViewCell.swift */,
+				80B8193B1F1F1D6500E45BDE /* AlertPickerView.swift */,
 			);
 			path = AppPets;
 			sourceTree = "<group>";
@@ -138,6 +146,15 @@
 				8020D62C1F1A742700F6671A /* Info.plist */,
 			);
 			path = AppPetsUITests;
+			sourceTree = "<group>";
+		};
+		80B819361F1F0AB200E45BDE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				80B819391F1F134900E45BDE /* filter100.png */,
+				80B819371F1F0AC300E45BDE /* img_husky_siberiano_3.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8020D6151F1A742700F6671A /* LaunchScreen.storyboard in Resources */,
+				80B819381F1F0AC300E45BDE /* img_husky_siberiano_3.jpg in Resources */,
+				80B8193A1F1F134900E45BDE /* filter100.png in Resources */,
 				8020D6121F1A742700F6671A /* Assets.xcassets in Resources */,
 				8020D60D1F1A742700F6671A /* Main.storyboard in Resources */,
 			);
@@ -275,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8020D6101F1A742700F6671A /* AppPets.xcdatamodeld in Sources */,
+				80B8193C1F1F1D6500E45BDE /* AlertPickerView.swift in Sources */,
 				8020D63B1F1DB13700F6671A /* Category.swift in Sources */,
 				8020D6391F1ABB5400F6671A /* Pet.swift in Sources */,
 				8020D63D1F1DB95900F6671A /* SerializationError.swift in Sources */,
@@ -525,6 +545,7 @@
 				8020D6311F1A742700F6671A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8020D6321F1A742700F6671A /* Build configuration list for PBXNativeTarget "AppPetsTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +554,7 @@
 				8020D6341F1A742700F6671A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8020D6351F1A742700F6671A /* Build configuration list for PBXNativeTarget "AppPetsUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +563,7 @@
 				8020D6371F1A742700F6671A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

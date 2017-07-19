@@ -11,6 +11,10 @@ import UIKit
 
 class TableViewCell: UITableViewCell{
     
+    
+    @IBOutlet weak var petName: UILabel!
+    @IBOutlet weak var petCategory: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
