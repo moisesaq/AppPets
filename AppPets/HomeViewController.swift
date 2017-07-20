@@ -14,9 +14,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var petList: [Pet] = []
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    let statusDefault = "pending"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadPets(status: statusDefault)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,8 +26,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     @IBAction func testSomething(_ sender: Any) {
+        
+    }
+    
+    func loadPets(status: String){
         showActivityIndicator()
-        Pet.findPetsByStatus(status: "sold"){ (results: [Pet]) in
+        clearList()
+        Pet.findPetsByStatus(status: status){ (results: [Pet]) in
             for result in results{
                 print("\(result)\n")
             }
@@ -38,8 +45,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         /*DispatchQueue.global(qos: .userInteractive).async {
-            
-        }*/
+         
+         }*/
+    }
+    
+    func clearList(){
+        if petList.count > 0 {
+            petList.removeAll()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,8 +82,28 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func showAlertFilter(_ sender: Any) {
-        /*let alert = AlertPickerView(title: "Filter", message: nil, preferredStyle: .alert)
-        self.present(alert, animated: true)*/
+        let alert = UIAlertController(title: "Select status", message: nil, preferredStyle: .alert)
+        
+        let pendingAction = UIAlertAction(title: "Pending", style: .default) { action in
+            self.loadPets(status: "pending")
+        }
+        
+        let soldAction = UIAlertAction(title: "Sold", style: .default) { action in
+            self.loadPets(status: "sold")
+        }
+        
+        let availableAction = UIAlertAction(title: "Available", style: .default) { action in
+            self.loadPets(status: "available")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        alert.addAction(pendingAction)
+        alert.addAction(soldAction)
+        alert.addAction(availableAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true)
+        
     }
 }
 
